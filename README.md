@@ -4,11 +4,23 @@ Magnificent 7 Backtesting using Double Bollinger Bands strategy
 
 # Table of Contents
 
+- [Installation](#installation)
+- [Background](#notes)
+- [Notes](#notes)
+
+# Installation
+
+```pip install pandas yfinance matplotlib```
+
+This can be run independently as a python notebook; Otherwise, copy out the contents in the second and third cells into a single python program and install the relevant dependencies.
+
 # Background
 
 Magnificent 7 Backtesting
 
-The task involves the creation of a backtesting software to evaluate the performance of a specified set of stocks known as the "Magnificent 7" (Microsoft [MSFT], Apple [AAPL], Nvidia [NVDA], Amazon [AMZN], Google [GOOG], Meta [META], Tesla [TSLA]) in the US stock market. The program should employ the Double Bollinger Bands strategy as the basis for trading signals or any other strategy that you deem more applicable. For further details on this strategy, refer to the comprehensive guide available at (https://www.3candlereversal.com/post/kathy-lien-s-double-bollinger-band-strategy).
+The task involves the creation of a backtesting software to evaluate the performance of a specified set of stocks known as the "Magnificent 7" (Microsoft [MSFT], Apple [AAPL], Nvidia [NVDA], Amazon [AMZN], Google [GOOG], Meta [META], Tesla [TSLA]) in the US stock market. The program should employ the Double Bollinger Bands strategy as the basis for trading signals or any other strategy that you deem more applicable. 
+
+For further details on this strategy, refer to the comprehensive guide available at (https://www.3candlereversal.com/post/kathy-lien-s-double-bollinger-band-strategy).
 
 ## Tasks
 
@@ -27,3 +39,9 @@ $10,000. The minimum transaction size is set at 1 share per trade
 - Sharpe Ratio
 - Sortino Ratio
 - Maximum Drawdown
+
+# Notes
+
+Capital used per stock is larger than initial capital as the capital is being reused -- once sold, cash available increases and we can now purchase other stocks.
+
+Disclaimer: I have never written a backtesting logic before. Please let me know if my approach is incorrect or missing specific details. Thank you! :)
